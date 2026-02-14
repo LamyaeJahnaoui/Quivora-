@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Résultat du Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/score.css">
+</head>
+<body>
+ 
+    <div class="score-container">
+        <h1>🎉 Quiz Result</h1>
+
+        <!-- Latest Result Card -->
+        <div id="latestResultContainer"></div>
+
+        <div class="score-box">
+            <p>Your score</p>
+            <h2 id="finalScore">0 / 5</h2>
+        </div>
+
+        <div class="score-message" id="scoreMessage">
+            Awesome! Keep it up! 💪 
+        </div>
+
+        <div class="score-actions">
+            <a href="ranking.html" class="btn primary">Ranking</a>
+            <a href="./index.html" class="btn secondary">Home</a>
+        </div>
+    </div>
+    <script type="module" src="../controller/ScoreController.js"></script>
+        <script>
+            // After showing the score, redirect to the dashboard after 5 seconds
+            setTimeout(() => {
+                window.location.href = './scoreDashboard.html';
+            }, 5000);
+        </script>
+
+</body>
+</html>

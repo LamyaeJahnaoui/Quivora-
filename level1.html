@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Quivora | Level 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/level.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="top-bar">
+    <div class="logo"><img src="../../assets/logo.png" alt="Quivora logo" class="logo-img"></div>
+    <div class="auth">
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+</header>
+
+<!-- ===== CONTENT ===== -->
+<main class="content">
+    <h2 class="level-title">Level 1 – Quizzes</h2>
+
+    <div class="quiz-container">
+        <!-- data-level et data-quiz pour récupérer dynamiquement le quiz à partir du frontend -->
+        <div class="quiz-card" data-level="1" data-quiz="1">Quiz 1</div>
+        <div class="quiz-card" data-level="1" data-quiz="2">Quiz 2</div>
+        <div class="quiz-card" data-level="1" data-quiz="3">Quiz 3</div>
+    </div>
+</main>
+
+<!-- ===== MODAL ===== -->
+<div class="modal-overlay" id="quizModal">
+    <div class="modal-box">
+        <h3>Ready to start?</h3>
+        <p class="modal-text">Once started, the quiz cannot be paused or exited until completed.</p>
+
+        <div class="modal-actions">
+            <button class="start-btn">Start</button>
+            <button class="cancel-btn">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<!-- ===== SCRIPT ===== -->
+<script type="module" src="../controller/levelController.js"></script>
+
+</body>
+</html>

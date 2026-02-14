@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../CSS/quiz.css">
+</head>
+<body>
+
+<header class="quiz-header">
+    <h1 id="quizTitle">QUIZ</h1>
+    <p class="remark">Answer carefully. No going back.</p>
+</header>
+
+<div class="timer-box">
+    ⏱ Time left: <span id="timer">03:00</span>
+</div>
+
+<main class="quiz-container">
+    <!-- Question + options injectées dynamiquement -->
+    <div class="question-box" id="questionBox"></div>
+
+    <!-- Next uniquement -->
+    <button class="next-btn" id="nextBtn" disabled>Next</button>
+</main>
+
+<!-- Un seul point d’entrée -->
+<script type="module" src="../controller/quizController.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login & Sign Up Slide</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+  <!-- MESSAGE PANEL -->
+  <div class="message-panel" id="messagePanel">
+    <h1 id="messageTitle">WELCOME BACK!</h1>
+    <p id="messageText">Enter your personal details and start your journey with us</p>
+  </div>
+
+  <!-- LOGIN FORM -->
+  <form id="loginForm" class="form active">
+    <h2>Login</h2> <br>
+    <div class="input-box">
+      <input type="text" required>
+      <label> Email </label>
+    </div>
+    <div class="input-box">
+      <input type="password" required>
+      <label>Password</label>
+    </div>
+    <button type="submit">Login</button>
+    <p class="switch">Don't have an account? <span id="toSignUp">Sign Up</span></p>
+  </form>
+
+  <!-- SIGN UP FORM -->
+  <form id="signUpForm" class="form">
+    <h2>Sign Up</h2><br>
+    <div class="input-box">
+      <input type="text" required>
+      <label>Username</label>
+    </div>
+    <div class="input-box">
+      <input type="email" required>
+      <label>Email</label>
+    </div>
+    <div class="input-box">
+      <input type="password" required>
+      <label>Password</label>
+    </div>
+    <button type="submit">Sign Up</button>
+    <p class="switch">Already have an account? <span id="toLogin">Login</span></p>
+  </form>
+
+</div>
+
+<script src="../controller/login1.js"></script>
+</body>
+</html>
